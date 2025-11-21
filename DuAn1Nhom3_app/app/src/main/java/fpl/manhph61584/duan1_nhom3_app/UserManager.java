@@ -1,21 +1,29 @@
 package fpl.manhph61584.duan1_nhom3_app;
 
-import java.util.HashMap;
+import fpl.manhph61584.duan1_nhom3_app.network.dto.UserDto;
 
 public class UserManager {
-    private static HashMap<String, String> userDatabase = new HashMap<>();
+    private static UserDto currentUser;
+    private static String authToken;
 
-    // Đăng ký người dùng mới
-    public static boolean register(String email, String password) {
-        if (userDatabase.containsKey(email)) {
-            return false; // Email đã tồn tại
-        }
-        userDatabase.put(email, password);
-        return true;
+    private UserManager() {
     }
 
-    // Kiểm tra đăng nhập
-    public static boolean login(String email, String password) {
-        return userDatabase.containsKey(email) && userDatabase.get(email).equals(password);
+    public static void saveSession(UserDto user, String token) {
+        currentUser = user;
+        authToken = token;
+    }
+
+    public static void clearSession() {
+        currentUser = null;
+        authToken = null;
+    }
+
+    public static UserDto getCurrentUser() {
+        return currentUser;
+    }
+
+    public static String getAuthToken() {
+        return authToken;
     }
 }
