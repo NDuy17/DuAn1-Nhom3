@@ -14,6 +14,11 @@ const voucherSchema = new mongoose.Schema({
   description: {
     type: String
   },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    default: null // null = voucher public, có giá trị = voucher của user cụ thể
+  },
   discountType: {
     type: String,
     enum: ['percentage', 'fixed'],

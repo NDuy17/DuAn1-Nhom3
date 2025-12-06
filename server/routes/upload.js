@@ -19,9 +19,15 @@ const storage = multer.diskStorage({
 const fileFilter = (req, file, cb) => {
   const allowedTypes = /jpeg|jpg|png|gif|webp/;
   const extname = allowedTypes.test(path.extname(file.originalname).toLowerCase());
-  const mimetype = allowedTypes.test(file.mimetype);
-
-  if (mimetype && extname) {
+  
+  // Kiểm tra MIME type: chấp nhận cả "image/*" (generic) hoặc MIME type cụ thể
+  const isImageMimeType = file.mimetype && (
+    file.mimetype.startsWith('image/') || 
+    allowedTypes.test(file.mimetype)
+  );
+  
+  // Chỉ cần extension hợp lệ hoặc MIME type hợp lệ (không cần cả hai)
+  if (extname || isImageMimeType) {
     return cb(null, true);
   } else {
     cb(new Error('Chỉ cho phép upload file ảnh (jpeg, jpg, png, gif, webp)'));

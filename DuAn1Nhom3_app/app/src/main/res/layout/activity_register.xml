@@ -56,33 +56,6 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
-        <!-- Số điện thoại -->
-        <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Số điện thoại" />
-        <EditText
-            android:id="@+id/phoneEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="0123456789"
-            android:inputType="phone"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Địa chỉ -->
-        <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Địa chỉ" />
-        <EditText
-            android:id="@+id/addressEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Số nhà, đường, quận, thành phố"
-            android:background="@drawable/edit_text_bg"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
-
         <!-- Mật khẩu -->
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"

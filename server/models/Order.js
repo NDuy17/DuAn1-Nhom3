@@ -14,6 +14,14 @@ const orderItemSchema = new mongoose.Schema({
   price: {
     type: Number,
     required: true
+  },
+  color: {
+    type: String,
+    default: 'Mặc định'
+  },
+  size: {
+    type: String,
+    default: 'Free size'
   }
 });
 
@@ -29,14 +37,45 @@ const orderSchema = new mongoose.Schema({
     required: true,
     min: 0
   },
+  discountAmount: {
+    type: Number,
+    default: 0
+  },
+  finalAmount: {
+    type: Number,
+    required: true,
+    min: 0
+  },
   status: {
     type: String,
     enum: ['pending', 'processing', 'shipped', 'delivered', 'cancelled'],
     default: 'pending'
   },
+  paymentStatus: {
+    type: String,
+    enum: ['unpaid', 'paid'],
+    default: 'unpaid'
+  },
+  receiverName: {
+    type: String,
+    required: true
+  },
+  phone: {
+    type: String,
+    required: true
+  },
   shippingAddress: {
     type: String,
     required: true
+  },
+  note: {
+    type: String,
+    default: ''
+  },
+  voucher: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Voucher',
+    default: null
   },
   createdAt: {
     type: Date,

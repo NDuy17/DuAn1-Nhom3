@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b144e139-d215-44c3-9c49-7819a857c80f" name="Changes" comment="" />
+    <list default="true" id="b144e139-d215-44c3-9c49-7819a857c80f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Voucher.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Voucher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/vouchers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/vouchers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,9 +62,9 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "NgocAnh",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DuAn1-Nhom3-Manh/DuAn1Nhom3_app"
+    "last_opened_file_path": "D:/DuAn1-Nhom3/DuAn1Nhom3_app"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

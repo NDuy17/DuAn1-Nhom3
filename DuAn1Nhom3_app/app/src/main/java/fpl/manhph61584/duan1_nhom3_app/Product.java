@@ -7,7 +7,10 @@ public class Product {
     private double price;
     private Category category;   // <-- QUAN TRỌNG!
     private int stock;
+    private int sold; // Số lượng đã bán
     private String image;
+    private String[] colors;
+    private String[] sizes;
     private String createdAt;
     private String updatedAt;
 
@@ -29,6 +32,9 @@ public class Product {
     public int getStock() { return stock; }
     public void setStock(int stock) { this.stock = stock; }
 
+    public int getSold() { return sold; }
+    public void setSold(int sold) { this.sold = sold; }
+
     public String getImage() { return image; }
     public void setImage(String image) { this.image = image; }
 
@@ -37,4 +43,10 @@ public class Product {
 
     public String getUpdatedAt() { return updatedAt; }
     public void setUpdatedAt(String updatedAt) { this.updatedAt = updatedAt; }
+
+    public String[] getColors() { return colors; }
+    public void setColors(String[] colors) { this.colors = colors; }
+
+    public String[] getSizes() { return sizes; }
+    public void setSizes(String[] sizes) { this.sizes = sizes; }
 }

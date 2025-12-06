@@ -47,5 +47,26 @@ public class CartManager {
     public static void clear() {
         CART_ITEMS.clear();
     }
+
+    public static void removeFromCart(CartItem item) {
+        CART_ITEMS.remove(item);
+    }
+
+    public static void removeFromCart(Product product, String color, String size) {
+        String safeColor = color == null || color.isEmpty() ? "Mặc định" : color;
+        String safeSize = size == null || size.isEmpty() ? "Free size" : size;
+        
+        CART_ITEMS.removeIf(item -> 
+            item.getProduct().getId().equals(product.getId())
+            && Objects.equals(item.getColor(), safeColor)
+            && Objects.equals(item.getSize(), safeSize)
+        );
+    }
 }
+
+
+
+
+
+
 
